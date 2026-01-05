@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title> Should I pin it 😋😍 </title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f5f5;
+    text-align: center;
+    padding: 16px;
+    overflow-y: auto; /* PAKSA SCROLL */
+}
+
+/* TOP ADS */
+.top-ads {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+/* VIDEO CONTAINER */
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    aspect-ratio: 9 / 16;
+    background: #000;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+/* VIDEO */
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* REMOVE FULLSCREEN */
+video::-webkit-media-controls-fullscreen-button,
+video::-webkit-media-controls-picture-in-picture-button {
+    display: none !important;
+}
+
+/* SCROLL SPACE (INI KUNCINYA) */
+.scroll-space {
+    height: 120px; /* bikin halaman bisa di-scroll */
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP ADS -->
+<div class="top-ads">
+    <script>
+    atOptions = {
+        'key' : 'e3390cf0a8cdf953ded85bdaaf3046a5',
+        'format' : 'iframe',
+        'height' : 250,
+        'width' : 300,
+        'params' : {}
+    };
+    </script>
+    <script src="https://braceslinear.com/e3390cf0a8cdf953ded85bdaaf3046a5/invoke.js"></script>
+</div>
+
+<!-- VIDEO -->
+<div class="video-wrapper">
+    <video autoplay loop muted playsinline controls
+        controlsList="nodownload noremoteplayback nofullscreen"
+        disablePictureInPicture
+        poster="https://postercdn.net/snaps/y8n18yfcefeweonr.jpg">
+        <source src="https://cdn.videy.co/Tr3qNQYs1.mp4" type="video/mp4">
+    </video>
+</div>
+
+<!-- EXTRA SPACE BIAR BISA SCROLL -->
+<div class="scroll-space"></div>
+
+<!-- HARD BLOCK FULLSCREEN -->
+<script>
+document.addEventListener("fullscreenchange", () => {
+    if (document.fullscreenElement) document.exitFullscreen();
+});
+document.addEventListener("webkitfullscreenchange", () => {
+    if (document.webkitFullscreenElement) document.webkitExitFullscreen();
+});
+document.querySelector("video").addEventListener("dblclick", e => e.preventDefault());
+</script>
+
+	<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4992245,4,511,95,18,00000000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4992245&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+
+</body>
+</html>
